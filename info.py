@@ -5,11 +5,11 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID','2238786'])
-API_HASH = environ['API_HASH','e449d6cc630583d0b415b286eedb9192']
-BOT_TOKEN = environ['BOT_TOKEN','5102163882:AAHTDGf1Ivsp7WSychHOP3vULxkmKoLimZg
+API_ID = int(environ['API_ID',''])
+API_HASH = environ['API_HASH','']
+BOT_TOKEN = environ['BOT_TOKEN','']
 
-']
+
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -21,18 +21,18 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', "-1001714033037").split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '950958796').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL','-1001327193557')
+auth_channel = environ.get('AUTH_CHANNEL','')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Kingmaker:PSPS@cluster0.iozxz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+DATABASE_URI = environ.get('DATABASE_URI', "")
 
-")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Kingmaker
 
-")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+
+
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001640792777'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<b>Join [PS MOVIES](https://t.me/PS_MOVIES11) </b><code>{file_name')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<b>Join [PS M) </b><code>{file_name')
