@@ -22,7 +22,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/Psautofilter2bot?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/PS_MOVIES1')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/PS_MOVIES11')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
